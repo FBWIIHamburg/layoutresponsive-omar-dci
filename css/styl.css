@@ -1,0 +1,56 @@
+*{box-sizing: border-box}
+body{margin: 0}
+.row{width: 100%;float: left;padding-left: 10%;padding-right: 10%}
+.top{background-color:black;display: flex;}
+.logo{color:white;flex: 4;padding: 15px;font-size: 25px;font-weight: bold}
+.nav{flex: 1;}
+.nav>ul{list-style: none;display: flex}
+ul>li{flex: 1;margin-right: 10px}
+ul>li>a{color: grey;text-decoration: none;padding: 15px;font-size: 25px;font-weight: bold}
+.active>a{color: white}
+
+.banner{background-color: brown;padding-left:10px ;padding-right:10px ;padding-bottom:50px;border-radius: 10px;margin-top: 50px;padding-top:10px }
+
+button{background-color: lightblue;color: white;padding: 10px;border-radius: 10px;font-size: 20px}
+
+.col1{width: 8.3%}
+.col2{width:16.6%;}
+.col3{width: 25%;}
+.col4{width: 33.33%}
+.col5{width:41.66% }
+.col6{width:50% }
+.col7{width: 58.33%}
+.col8{width:66.66% ;}
+.col9{width:75% }
+.col10{width:83.33%;background-color: blue }
+.col11{width: 91.66%}
+.col12{width: 100%}
+/* <!--this mean every class start with col will take this code effect--!> */
+ [class*="col"]{
+    float: left;padding: 15px;} 
+.card{padding:5px;margin-top: 35px}
+.card-content{ border: 1px solid black}
+.card-content>img{width: 100%;}
+.card-content>h1{text-align: center}
+.card-footer{ background-color: beige;padding-top: 10px;padding-bottom: 10px}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .row{padding-left: 0px;padding-right: 0px}  
+.top{flex-direction: column;text-align: center} 
+.nav>ul{flex-direction: column;}
+.card{flex-direction: column;width: 100%}
+    
+} 
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 800px) {
+    .row1{padding-left: 0px;padding-right: 0px}  
+.top1{flex-direction: column;text-align: center} 
+.nav1>ul{flex-direction: column;}
+.card1{flex-direction: column;width: 50%}
+ 
+} 
+
