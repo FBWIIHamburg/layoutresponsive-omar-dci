@@ -46,11 +46,19 @@ button{background-color: lightblue;color: white;padding: 10px;border-radius: 10p
 
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (max-width: 800px) {
-    .row1{padding-left: 0px;padding-right: 0px}  
-.top1{flex-direction: column;text-align: center} 
-.nav1>ul{flex-direction: column;}
-.card1{flex-direction: column;width: 50%}
+@media only screen and (min-width: 600px) {
+    .row{padding-left: 0px;padding-right: 0px}  
+.top{flex-direction: column;text-align: center} 
+.nav>ul{flex-direction: column;}
+.card{flex-direction: column;width: 50%}
  
 } 
+@media only screen and (min-width: 992px) {
 
+   
+    .top{flex-direction: row;text-align: center;display:flex} 
+    .nav>ul{flex-direction: row;}
+    .card{flex-direction: row;width: 25%}
+
+
+}
